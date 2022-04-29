@@ -1,0 +1,72 @@
+name: localization_demo
+description: A new Flutter project.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  #Sdk For localizations
+  flutter_localizations:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  cupertino_icons: ^1.0.2
+  #for network calling and network connectivity check
+  http: ^0.13.4
+  connectivity_plus: ^2.3.0
+  #for state management
+  flutter_bloc: ^8.0.1
+  equatable: ^2.0.3
+  #for local data
+  shared_preferences: ^2.0.13
+  #For internationalization like language and local
+  intl: ^0.17.0
+  # Functions that support JSON code generation via the `json_serializable` package.
+  json_annotation: ^4.4.0
+  #For cached_network_image
+  cached_network_image: ^3.2.0
+
+dev_dependencies:
+  integration_test:
+    sdk: flutter
+  flutter_test:
+    sdk: flutter
+  floor_generator: ^1.2.0
+
+  bloc_test: ^9.0.3
+  # Tools to write binaries that run builders.
+  build_runner: ^2.1.8
+  # Automatically generate code for converting to and from JSON by annotating Dart classes.
+  json_serializable: ^6.1.5
+  # Mock library for Dart inspired by Mockito.
+  mockito: ^5.1.0
+  # A utility for providing mocked response to Image.network in Flutter widget tests.
+  network_image_mock: ^2.1.0
+  # The "flutter_lints" package below contains a set of lints
+  flutter_lints: ^1.0.0
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+
+  # To add custom fonts to application
+  fonts:
+    - family: Manrope
+      fonts:
+        - asset: assets/fonts/Manrope-Regular.ttf
+        - asset: assets/fonts/Manrope-Bold.ttf
+        - asset: assets/fonts/Manrope-SemiBold.ttf
+        - asset: assets/fonts/Manrope-Medium.ttf
+        - asset: assets/fonts/Manrope-Light.ttf
